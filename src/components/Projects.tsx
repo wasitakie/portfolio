@@ -18,7 +18,7 @@ const projects = [
     title: "Task Management SaaS",
     description:
       "A collaborative task management tool featuring real-time updates, drag-and-drop boards, and team roles.",
-    tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io"],
+    tech: ["Next.js", "Supabase", "Tailwind CSS"],
     github: "#",
     live: "#",
     image:
