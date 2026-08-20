@@ -1,0 +1,101 @@
+{
+  "Navbar": {
+    "brand": "WA.",
+    "about": "เกี่ยวกับ",
+    "projects": "โปรเจกต์",
+    "experience": "ประสบการณ์",
+    "contact": "ติดต่อ",
+    "languageLabel": "เปลี่ยนภาษา"
+  },
+  "Hero": {
+    "titlePrefix": "สวัสดีค่ะ ฉันคือ",
+    "name": "วสิตา ธนวัฒนานนท์",
+    "role": "Full Stack Developer",
+    "description": "ฉันสร้างเว็บแอปพลิเคชันที่สวยงาม รองรับทุกหน้าจอ และใช้งานได้จริงด้วยเทคโนโลยีสมัยใหม่อย่าง Next.js, React และ Tailwind CSS",
+    "cta": "ดูผลงาน"
+  },
+  "About": {
+    "title": "เกี่ยวกับฉัน",
+    "imageAlt": "รูปโปรไฟล์",
+    "description": "สวัสดีค่ะ ฉันวสิตา Full Stack Developer จากจังหวัดนครปฐม ประเทศไทย ฉันออกแบบและพัฒนาโซลูชันที่สะอาด ตั้งแต่หน้า landing page หลายภาษา ไปจนถึง admin dashboard ที่ทรงพลังและรองรับมือถือ เพื่อเชื่อมระบบ backend ที่ซับซ้อนเข้ากับ frontend ที่สวยงามและตอบสนองได้ดี",
+    "frontend": "Frontend",
+    "backend": "Backend"
+  },
+  "Projects": {
+    "title": "โปรเจกต์เด่น",
+    "items": [
+      {
+        "title": "แพลตฟอร์ม E-Commerce",
+        "description": "โซลูชัน e-commerce แบบ full-stack ด้วย Next.js พร้อม Stripe integration และ Sanity CMS backend"
+      },
+      {
+        "title": "Task Management SaaS",
+        "description": "เครื่องมือจัดการงานร่วมกัน มีการอัปเดตแบบ real-time บอร์ด drag-and-drop และระบบบทบาทของทีม"
+      },
+      {
+        "title": "AI Image Generator",
+        "description": "เว็บแอปพลิเคชันที่เชื่อมต่อ OpenAI DALL-E API เพื่อสร้างรูปภาพจากคำอธิบาย พร้อมฟีเจอร์แกลเลอรี"
+      }
+    ],
+    "githubLabel": "GitHub Repository",
+    "liveLabel": "Live Demo"
+  },
+  "Experience": {
+    "title": "ประสบการณ์",
+    "items": [
+      {
+        "role": "Senior Full Stack Developer",
+        "company": "Freelance",
+        "period": "2025 - ปัจจุบัน",
+        "description": "พัฒนา landing page สำหรับผลิตภัณฑ์หลายภาษาที่มีประสิทธิภาพสูง ช่วยเพิ่ม engagement และทำให้ customer journey ลื่นไหล"
+      },
+      {
+        "role": "Full Stack Developer",
+        "company": "Freelance",
+        "period": "2024 - 2025",
+        "description": "พัฒนาและดูแลเว็บแอปพลิเคชันที่ปลอดภัยและมีประสิทธิภาพสูง โดยใช้หลักการ PHP สมัยใหม่ร่วมกับระบบจัดการฐานข้อมูลที่แข็งแรง"
+      },
+      {
+        "role": "Full Stack Developer",
+        "company": "Freelance",
+        "period": "2023 - 2024",
+        "description": "นำการพัฒนา microservices ที่ขยายระบบได้ และปรับปรุง frontend ด้วย PHP ส่งผลให้ประสิทธิภาพดีขึ้น 40%"
+      },
+      {
+        "role": "Web Developer",
+        "company": "Freelance",
+        "period": "2019 - 2021",
+        "description": "พัฒนาและดูแลเว็บแอปพลิเคชัน full-stack พร้อมช่วยย้ายระบบ legacy ไปสู่สถาปัตยกรรมที่ทันสมัยขึ้น"
+      }
+    ]
+  },
+  "Contact": {
+    "eyebrow": "ติดต่อฉัน",
+    "title": "มาทำงานร่วมกัน",
+    "description": "ตอนนี้ฉันเปิดรับโอกาสใหม่ๆ หากคุณมีคำถามหรืออยากทักทาย ฉันจะพยายามตอบกลับให้เร็วที่สุด",
+    "infoTitle": "ข้อมูลติดต่อ",
+    "infoDescription": "ติดต่อผ่านช่องทางด้านล่างได้เลย",
+    "email": "อีเมล",
+    "phone": "โทรศัพท์",
+    "location": "ที่อยู่",
+    "locationValue": "นครปฐม, ประเทศไทย",
+    "follow": "ติดตามฉัน",
+    "formTitle": "ส่งข้อความ",
+    "formDescription": "กรอกฟอร์มแล้วฉันจะตอบกลับโดยเร็ว",
+    "name": "ชื่อ",
+    "namePlaceholder": "ชื่อของคุณ",
+    "emailPlaceholder": "you@example.com",
+    "subject": "หัวข้อ",
+    "subjectPlaceholder": "ต้องการคุยเรื่องอะไร?",
+    "message": "ข้อความ",
+    "messagePlaceholder": "พิมพ์ข้อความของคุณ...",
+    "sending": "กำลังส่ง...",
+    "send": "ส่งข้อความ",
+    "reset": "ล้างฟอร์ม",
+    "success": "ส่งข้อความเรียบร้อยแล้ว!",
+    "error": "ส่งข้อความไม่สำเร็จ กรุณาลองใหม่อีกครั้ง"
+  },
+  "Footer": {
+    "text": "ออกแบบและพัฒนาโดย Wasita Tan © {year}"
+  }
+}

@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("About");
+
   return (
     <section id="about" className="py-24 px-4 bg-black">
       <div className="max-w-6xl mx-auto">
@@ -24,7 +27,7 @@ export default function About() {
               <div className="absolute inset-0 w-full h-full rounded-full overflow-hidden z-10 bg-zinc-800 bg-cover bg-center">
                 <Image
                   src={"/profile.png"}
-                  alt="Profile"
+                  alt={t("imageAlt")}
                   fill
                   sizes="(max-width: 768px) 256px, 320px"
                   priority
@@ -42,21 +45,19 @@ export default function About() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="md:w-1/2"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              {t("title")}
+            </h2>
             <div className="w-20 h-1 bg-purple-500 rounded mb-8"></div>
 
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Hello! I&apos;m Wasita, a passionate Full Stack Developer based in
-              Nakhon Pathom, Thailand. From multilingual product landing pages
-              to powerful, mobile-responsive admin dashboards, I design and
-              develop clean solutions that connect complex backends with
-              beautiful, responsive frontends.
+              {t("description")}
             </p>
 
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <h3 className="text-white font-bold mb-3 border-b border-zinc-800 pb-2 inline-block">
-                  Frontend
+                  {t("frontend")}
                 </h3>
                 <ul className="space-y-1 text-gray-400">
                   <li className="flex items-center gap-2">
@@ -78,7 +79,7 @@ export default function About() {
               </div>
               <div>
                 <h3 className="text-white font-bold mb-3 border-b border-zinc-800 pb-2 inline-block">
-                  Backend
+                  {t("backend")}
                 </h3>
                 <ul className="space-y-1 text-gray-400">
                   <li className="flex items-center gap-2">

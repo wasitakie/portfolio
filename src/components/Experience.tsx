@@ -1,32 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-const experiences = [
-  {
-    role: "Senior Full Stack Developer",
-    company: "Freelance",
-    period: "2025 - Present",
-    description:
-      "Developed high-performance, multilingual product landing pages, enhancing user engagement and ensuring a seamless customer journey.",
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Freelance",
-    period: "2023 - 2024",
-    description:
-      "Lead the development of scalable microservices and modernized the frontend using PHP , resulting in a 40% performance improvement.",
-  },
-  {
-    role: "Web Developer",
-    company: "Freelance",
-    period: "2019 - 2021",
-    description:
-      "Developed and maintained full-stack web applications. Assisted in migrating legacy systems to modern React architecture.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function Experience() {
+  const t = useTranslations("Experience");
+  const experiences = t.raw("items") as Array<{
+    role: string;
+    company: string;
+    period: string;
+    description: string;
+  }>;
+
   return (
     <section id="experience" className="py-24 px-4 bg-black">
       <div className="max-w-4xl mx-auto">
@@ -38,7 +23,7 @@ export default function Experience() {
           className="mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-right">
-            Experience
+            {t("title")}
           </h2>
           <div className="flex justify-end">
             <div className="w-20 h-1 bg-purple-500 rounded"></div>
