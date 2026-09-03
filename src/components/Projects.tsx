@@ -45,9 +45,7 @@ export default function Projects() {
           transition={{ duration: 0.5 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            {t("title")}
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t("title")}</h2>
           <div className="w-20 h-1 bg-purple-500 rounded"></div>
         </motion.div>
 
@@ -56,59 +54,59 @@ export default function Projects() {
             const content = projectContent[index];
 
             return (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-purple-500/50 transition-colors group"
-            >
-              {/* Project Image Placeholder */}
-              <div
-                className="h-48 w-full bg-zinc-800 relative overflow-hidden bg-cover bg-center"
-                style={{ backgroundImage: `url(${project.image})` }}
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 hover:border-purple-500/50 transition-colors group"
               >
-                <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors duration-500" />
-              </div>
+                {/* Project Image Placeholder */}
+                <div
+                  className="h-48 w-full bg-zinc-800 relative overflow-hidden bg-cover bg-center"
+                  style={{ backgroundImage: `url(${project.image})` }}
+                >
+                  <div className="absolute inset-0 bg-black/50 group-hover:bg-transparent transition-colors duration-500" />
+                </div>
 
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">
-                  {content.title}
-                </h3>
-                <p className="text-gray-400 text-sm mb-4 line-clamp-3">
-                  {content.description}
-                </p>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-2 group-hover:text-purple-400 transition-colors">
+                    {content.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm mb-4 line-clamp-3">
+                    {content.description}
+                  </p>
 
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tech.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="text-xs bg-zinc-800 text-purple-300 px-2 py-1 rounded"
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {project.tech.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="text-xs bg-zinc-800 text-purple-300 px-2 py-1 rounded"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-4">
+                    <a
+                      href={project.github}
+                      className="text-gray-400 hover:text-white transition-colors"
+                      aria-label={t("githubLabel")}
                     >
-                      {tech}
-                    </span>
-                  ))}
+                      <FaGithub size={20} />
+                    </a>
+                    <a
+                      href={project.live}
+                      className="text-gray-400 hover:text-purple-400 transition-colors"
+                      aria-label={t("liveLabel")}
+                    >
+                      <FaExternalLinkAlt size={18} />
+                    </a>
+                  </div>
                 </div>
-
-                <div className="flex gap-4">
-                  <a
-                    href={project.github}
-                    className="text-gray-400 hover:text-white transition-colors"
-                    aria-label={t("githubLabel")}
-                  >
-                    <FaGithub size={20} />
-                  </a>
-                  <a
-                    href={project.live}
-                    className="text-gray-400 hover:text-purple-400 transition-colors"
-                    aria-label={t("liveLabel")}
-                  >
-                    <FaExternalLinkAlt size={18} />
-                  </a>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
             );
           })}
         </div>
